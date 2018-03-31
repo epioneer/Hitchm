@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the IntroductionsPage page.
+ * Generated class for the IntroductionsEmilyPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,10 +10,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-introductions',
-  templateUrl: 'introductions.html',
+  selector: 'page-emily',
+  templateUrl: 'emily.html',
 })
-export class IntroductionsPage {
+export class EmilyPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -21,14 +21,5 @@ export class IntroductionsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EmilyPage');
   }
-	
-  openEmily() {
-    this.navCtrl.push('EmilyPage');
-  }
- 
-  goToEmily() {
-    this.navCtrl.parent.select(1);
-  }
 
 }
-
