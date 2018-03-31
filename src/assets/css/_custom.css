@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.toolbar-title:before {
+	content: "";
+	background-image: url(../imgs/logo.png);
+	background-repeat: no-repeat;
+	display: block;
+	width: 50px;
+	height: 55px;
+	background-size: 50px 55px;
+	margin: 0px auto 10px auto;
+}
+
+.toolbar-title {text-align: center;}
