@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IntroEmilyPage }from '../intro-emily/intro-emily';
 import { SettingsPage }from '../settings/settings';
 
 /**
@@ -19,9 +20,13 @@ export class IntroductionsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 	
-  push() {
-    this.navCtrl.push(SettingsPage);
-  }
+  pushToIntroEmily() {
+	this.navCtrl.push(IntroEmilyPage);
+}
+	
+  pushToSettings() {
+	this.navCtrl.push(SettingsPage);
+}
 
 }
 
