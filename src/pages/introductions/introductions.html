@@ -44,9 +44,9 @@
       <span class="intro-italics">Hitchm from <strong>Emily Nash</strong></span>
     </a>
     <ion-item-options side="right">
-      <button ion-button color="danger">
-        <ion-icon name="delete"></ion-icon>
-        Delete
+      <button ion-button color="default">
+        <ion-icon name="decline"></ion-icon>
+        Decline
       </button>
     </ion-item-options>
   </ion-item-sliding>
@@ -61,9 +61,9 @@
       <h2>From <strong>Emily Nash</strong></h2>
     </a>
     <ion-item-options side="right">
-      <button ion-button color="danger">
-        <ion-icon name="delete"></ion-icon>
-        Delete
+      <button ion-button color="default">
+        <ion-icon name="decline"></ion-icon>
+        Decline
       </button>
     </ion-item-options>
   </ion-item-sliding>
@@ -76,9 +76,9 @@
       <span class="intro-accepted">Scott's friend accepted.</span>
 	</a>
     <ion-item-options side="right">
-      <button ion-button color="danger">
+      <button ion-button color="default">
         <ion-icon name="delete"></ion-icon>
-        Delete
+        Decline
       </button>
     </ion-item-options>
   </ion-item-sliding>
@@ -94,7 +94,7 @@
       <span class="intro-declined">Jessica's friend declined.</span>
 	</a>
     <ion-item-options side="right">
-      <button ion-button color="danger">
+      <button ion-button color="danger" (click)="showConfirm()">
         <ion-icon name="delete"></ion-icon>
         Delete
       </button>

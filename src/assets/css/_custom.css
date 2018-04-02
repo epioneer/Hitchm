@@ -46,3 +46,46 @@
 	font-style: italic;
 	color: #666666;
 }
+
+.avatar-speak {
+	text-align: center;
+  } 
+
+.avatar-speak img {
+  	border: 8px solid #ffffff;
+  	width: 120px;
+  	border-radius: 50%;
+  } 
+
+.speak-accept {
+	margin: 0px 0;
+	font-size: 1.5em;
+	color: #55AF1C;
+}
+
+.speak-wrapper {
+	width: 230px; 
+	height: 1px; 
+	margin: 0 auto 45px auto;
+}
+
+.speak-bubble1 {
+	width: 20px; 
+	height: 20px; 
+	border-radius: 50%; 
+	background-color: #fff; 
+	margin: -45px 0px 0px 33px;
+}
+
+.speak-bubble2 {
+	width: 45px; 
+	height: 45px; 
+	border-radius: 50%; 
+	background-color: #fff; 
+	margin: 5px 0px 0px 0px;
+}
+
+.dk-gray-message {
+	color: #666666;
+	font-size: .8em;
+}
