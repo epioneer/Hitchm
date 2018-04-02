@@ -17,7 +17,7 @@ import { SettingsPage }from '../settings/settings';
 })
 export class IntroductionsPage {
 	
-	intros: string = "newintros";
+	intros: string = "myhitchm";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
