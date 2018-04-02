@@ -37,7 +37,7 @@ export class IntroductionsPage {
       message: 'Are you sure you want to permanently delete this introduction?',
       buttons: [
         {
-          text: 'Disagree',
+          text: 'Cancel',
           handler: () => {
             console.log('Disagree clicked');
           }
