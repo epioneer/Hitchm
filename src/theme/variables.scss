@@ -44,7 +44,7 @@ $colors: (
 );
 
 $toolbar-background: #9150D1;
-$toolbar-md-height: 150px;
+$toolbar-md-height: 130px;
 $toolbar-title: center;
 $toolbar-title-font-size: 1.6em;
 $item-md-avatar-size: 65px;
@@ -68,8 +68,8 @@ $card-md-box-shadow: none;
 // iOS only Sass variables can go here
 
 
-$toolbar-ios-height: 150px;
-$toolbar-ios-title-font-size: 1.6em;
+$toolbar-ios-height: 120px;
+$toolbar-ios-title-font-size: 1.4em;
 $item-ios-avatar-size: 65px;
 $badge-ios-background-color: #89D856;
 $label-ios-margin: 20px 0;
