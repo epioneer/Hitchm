@@ -15,7 +15,23 @@
 
 <ion-content>
 
-<ion-list>
+  <ion-segment [(ngModel)]="intros">
+   
+   
+    <ion-segment-button value="newintros">
+      <ion-badge>2</ion-badge> New Introductions
+    </ion-segment-button>
+    
+    
+    <ion-segment-button value="myhitchms">
+      My Hitchm's
+    </ion-segment-button>
+    
+  </ion-segment>
+  
+  <div [ngSwitch]="intros">
+
+<ion-list *ngSwitchCase="'newintros'">
   <ion-item-sliding>
    <a ion-item (click)="pushToIntroEmily()">
       <ion-avatar item-start>
@@ -36,7 +52,7 @@
         <img src="../assets/imgs/tully.jpg">
       </ion-avatar>
       <h2>From <strong>Scott Smith</strong></h2>
-      <i style="font-size: .8em; color: green;">Scott's friend accepted.</i>
+      <span class="intro-accepted">Scott's friend accepted.</span>
 	</a>
     <ion-item-options side="right">
       <button ion-button color="danger">
@@ -47,5 +63,26 @@
   </ion-item-sliding>
   
 </ion-list>
+
+<ion-list *ngSwitchCase="'myhitchms'">
+  <ion-item-sliding>
+   <a ion-item (click)="pushToIntroEmily()">
+      <ion-avatar item-start>
+        <img src="../assets/imgs/barbie.png">
+      </ion-avatar>
+      <h2><strong>Samantha Williams</strong></h2>
+      <span class="intro-italics">Hitchm from <strong>Emily Nash</strong></span>
+    </a>
+    <ion-item-options side="right">
+      <button ion-button color="danger">
+        <ion-icon name="delete"></ion-icon>
+        Delete
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  
+</ion-list>
+
+</div>
 
 </ion-content>

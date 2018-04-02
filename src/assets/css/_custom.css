@@ -14,4 +14,29 @@
 
 .toolbar-title {text-align: center;}
 
-/*.fixed-content {margin-top: 190px;} */
+.segment-ios .segment-button {
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+.segment-md .segment-button {
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+.segment-button.segment-activated {
+	border-width: 0px;
+	border-bottom: 1px solid #9150D1;
+}
+
+.intro-accepted {
+	font-size: .8em;
+	color: #55AF1C;
+	font-style: italic;
+}
+
+.intro-italics {
+	font-size: .8em;
+	font-style: italic;
+	color: #666666;
+}

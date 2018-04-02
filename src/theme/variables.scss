@@ -34,7 +34,7 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #9150D1,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
@@ -50,6 +50,10 @@ $background-color: #EFEFEF;
 $badge-md-background-color: #89D856;
 $tabs-tab-color-active: #B5A1FF;
 $tabs-md-tab-icon-color: #B7B7B7;
+$segment-button-md-height: 8rem;
+$segment-button-md-line-height: 8rem;
+$segment-button-md-background-color: #ffffff;
+// $segment-button-md-line-height: 3em;
 
 
 
@@ -62,6 +66,15 @@ $toolbar-ios-height: 150px;
 $toolbar-ios-title-font-size: 1.6em;
 $item-ios-avatar-size: 65px;
 $badge-ios-background-color: #89D856;
+
+$segment-button-ios-background-color: #ffffff;
+$segment-button-ios-border-radius: 0px;
+$segment-button-ios-border-width: 0px;
+$segment-button-ios-height: 8rem;
+$segment-button-ios-line-height: 8rem;
+$segment-button-ios-font-size: 1.1em;
+$toolbar-ios-active-color: #ffffff;
+
 
 
 // App Material Design Variables

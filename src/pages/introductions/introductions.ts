@@ -18,6 +18,7 @@ import { SettingsPage }from '../settings/settings';
 export class IntroductionsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+	  this.intros = "newintros";
   }
 	
   pushToIntroEmily() {
