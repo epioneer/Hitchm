@@ -39,7 +39,7 @@ export class IntroductionsPage {
         {
           text: 'Cancel',
           handler: () => {
-            console.log('Disagree clicked');
+            console.log('Cancel clicked');
           }
         },
         {

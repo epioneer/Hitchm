@@ -37,7 +37,7 @@
 
 <ion-list *ngSwitchCase="'myhitchm'">
   <ion-item-sliding>
-   <a ion-item (click)="pushToIntroEmily()">
+   <a ion-item (click)="MyHitchm()">
       <ion-avatar item-start>
         <img src="../assets/imgs/barbie.png">
       </ion-avatar>
@@ -57,9 +57,10 @@
   <ion-item-sliding>
    <a ion-item (click)="pushToIntroEmily()">
       <ion-avatar item-start>
-        <img src="../assets/imgs/barrett.jpg">
+        <img src="../assets/imgs/elsa.jpg">
       </ion-avatar>
-      <h2>From <strong>Emily Nash</strong></h2>
+      <p>Introduction from:</p>
+      <h2><strong>Emily Nash</strong></h2>
     </a>
     <ion-item-options side="right">
      <button ion-button color="secondary">
@@ -75,9 +76,10 @@
     <ion-item-sliding>
    <a ion-item (click)="pushToSettings()">
       <ion-avatar item-start>
-        <img src="../assets/imgs/tully.jpg">
+        <img src="../assets/imgs/stich.jpg">
       </ion-avatar>
-      <h2>From <strong>Scott Smith</strong></h2>
+      <p>Introduction from:</p>
+      <h2><strong>Scott Smith</strong></h2>
       <span class="intro-accepted">Scott's friend accepted.</span>
 	</a>
     <ion-item-options side="right">
@@ -99,7 +101,8 @@
       <ion-avatar item-start>
         <img src="../assets/imgs/jessie.png">
       </ion-avatar>
-      <h2>From <strong>Jessica Jones</strong></h2>
+      <p>Introduction from:</p>
+      <h2><strong>Jessica Jones</strong></h2>
       <span class="intro-declined">Jessica's friend declined.</span>
 	</a>
     <ion-item-options side="right">
