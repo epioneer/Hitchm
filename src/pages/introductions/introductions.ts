@@ -16,9 +16,10 @@ import { SettingsPage }from '../settings/settings';
   templateUrl: 'introductions.html',
 })
 export class IntroductionsPage {
+	
+	intros: string = "newintros";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-	  this.intros = "newintros";
   }
 	
   pushToIntroEmily() {
