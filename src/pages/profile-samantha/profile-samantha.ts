@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { ChatSamanthaPage } from '../chat-samantha/chat-samantha';
+
 /**
  * Generated class for the ProfileSamanthaPage page.
  *
@@ -21,5 +23,9 @@ export class ProfileSamanthaPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfileSamanthaPage');
   }
+	
+  pushToChat() {
+	this.navCtrl.push(ChatSamanthaPage);
+}
 
 }
