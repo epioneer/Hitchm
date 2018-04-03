@@ -13,8 +13,55 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
-This is the chat page.
+<ion-item-sliding>
+   <a ion-item (click)="MyHitchm()">
+      <ion-avatar item-start>
+        <img src="../assets/imgs/barbie.png">
+      </ion-avatar>
+      <ion-icon name="chatbubbles" color="secondary" item-right></ion-icon>   
+      <h2><strong>Samantha Williams</strong></h2>
+      <p>Hi, John. Emily thought we should chat. How are you?</p>
+    </a>
+    <ion-item-options side="right">
+      <button ion-button color="danger">
+        <ion-icon name="decline"></ion-icon>
+        Decline
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  
+    <ion-item-sliding>
+   <a ion-item (click)="MyHitchm()">
+      <ion-avatar item-start>
+        <img src="../assets/imgs/frozen.jpg">
+      </ion-avatar> 
+      <h2><strong>Beth Hart</strong></h2>
+      <p>Sure, that would be great. What time were you thinking?</p>
+    </a>
+    <ion-item-options side="right">
+      <button ion-button color="danger">
+        <ion-icon name="decline"></ion-icon>
+        Decline
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  
+    <ion-item-sliding>
+   <a ion-item (click)="MyHitchm()">
+      <ion-avatar item-start>
+        <img src="../assets/imgs/snow.jpg">
+      </ion-avatar>
+      <h2><strong>Amanda Strong</strong></h2>
+      <p>Be back in a few.</p>
+    </a>
+    <ion-item-options side="right">
+      <button ion-button color="danger">
+        <ion-icon name="decline"></ion-icon>
+        Decline
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
 
 </ion-content>
