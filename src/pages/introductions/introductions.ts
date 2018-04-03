@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { IntroEmilyPage } from '../intro-emily/intro-emily';
-import { SettingsPage } from '../settings/settings';
+import { ProfileSamanthaPage } from '../profile-samantha/profile-samantha';
 import { AlertController } from 'ionic-angular';
 
 /**
@@ -26,9 +26,9 @@ export class IntroductionsPage {
   pushToIntroEmily() {
 	this.navCtrl.push(IntroEmilyPage);
 }
-	
-  pushToSettings() {
-	this.navCtrl.push(SettingsPage);
+
+  pushToProfile() {
+	this.navCtrl.push(ProfileSamanthaPage);
 }
 
   showConfirm() {
