@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { IntroEmilyPage }from '../intro-emily/intro-emily';
-import { SettingsPage }from '../settings/settings';
+import { IntroEmilyPage } from '../intro-emily/intro-emily';
+import { SettingsPage } from '../settings/settings';
 import { AlertController } from 'ionic-angular';
 
 /**
