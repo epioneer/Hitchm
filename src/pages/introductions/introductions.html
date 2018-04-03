@@ -18,7 +18,6 @@
   <ion-segment [(ngModel)]="intros">
     
     <ion-segment-button value="myhitchm">
-     <ion-badge>1</ion-badge>
       My Hitchm's
     </ion-segment-button>
     
@@ -42,8 +41,9 @@
       <ion-avatar item-start>
         <img src="../assets/imgs/barbie.png">
       </ion-avatar>
+      <ion-icon name="chatbubbles" color="secondary" item-right></ion-icon>   
       <h2><strong>Samantha Williams</strong></h2>
-      <span class="intro-italics">Hitchm from <strong>Emily Nash</strong></span>
+      <span class="intro-italics">Hitch'm from <strong>Emily Nash</strong></span>
     </a>
     <ion-item-options side="right">
       <button ion-button color="danger">
@@ -52,6 +52,40 @@
       </button>
     </ion-item-options>
   </ion-item-sliding>
+  
+    <ion-item-sliding>
+   <a ion-item (click)="MyHitchm()">
+      <ion-avatar item-start>
+        <img src="../assets/imgs/frozen.jpg">
+      </ion-avatar> 
+      <h2><strong>Beth Hart</strong></h2>
+      <span class="intro-italics">Hitch'm from <strong>Emily Nash</strong></span>
+    </a>
+    <ion-item-options side="right">
+      <button ion-button color="danger">
+        <ion-icon name="decline"></ion-icon>
+        Decline
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  
+    <ion-item-sliding>
+   <a ion-item (click)="MyHitchm()">
+      <ion-avatar item-start>
+        <img src="../assets/imgs/snow.jpg">
+      </ion-avatar>
+      <h2><strong>Amanda Strong</strong></h2>
+      <span class="intro-italics">Hitch'm from <strong>Tom Williams</strong></span>
+    </a>
+    <ion-item-options side="right">
+      <button ion-button color="danger">
+        <ion-icon name="decline"></ion-icon>
+        Decline
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  
+  
   </ion-list>
   
   <ion-list *ngSwitchCase="'new'">
