@@ -12,6 +12,17 @@
 	margin: 0px auto 10px auto;
 }
 
+.login-logo:before {
+	content: "";
+	background-image: url(../imgs/logo.png);
+	background-repeat: no-repeat;
+	display: block;
+	width: 85px;
+	height: 91px;
+	background-size: 85px 91px;
+	margin: 0px auto 10px auto;
+}
+
 .toolbar-title {text-align: center;}
 
 .segment-ios .segment-button {
@@ -89,3 +100,26 @@
 	color: #666666;
 	font-size: .8em;
 }
+
+.login-wrapper {
+	text-align: center; 
+	position: absolute; 
+	top: 40%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+}
+
+.btn-facebook:before {
+	font-family: FontAwesome;
+	content: "\f082";
+	margin-right: 7px;
+	font-size: 1.4em;
+}
+
+.btn-snapchat:before {
+	font-family: FontAwesome;
+	content: "\f2ab";
+	margin-right: 7px;
+	font-size: 1.4em;
+}
+
