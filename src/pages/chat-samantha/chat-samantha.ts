@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProfileSamanthaPage } from '../profile-samantha/profile-samantha';
 
-import {Component, ViewChild} from '@angular/core';
-
 /**
  * Generated class for the ChatSamanthaPage page.
  *
