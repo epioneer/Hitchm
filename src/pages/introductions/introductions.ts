@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { IntroEmilyPage } from '../intro-emily/intro-emily';
+import { IntroScottPage } from '../intro-scott/intro-scott';
 import { ProfileSamanthaPage } from '../profile-samantha/profile-samantha';
 import { AlertController } from 'ionic-angular';
 
@@ -25,6 +26,10 @@ export class IntroductionsPage {
 	
   pushToIntroEmily() {
 	this.navCtrl.push(IntroEmilyPage);
+}
+
+  pushToIntroScott() {
+	this.navCtrl.push(IntroScottPage);
 }
 
   pushToProfile() {

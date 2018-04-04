@@ -9,6 +9,7 @@ import { ChatPage } from '../pages/chat/chat';
 import { AddPage } from '../pages/add/add';
 import { SettingsPage } from '../pages/settings/settings';
 import { IntroEmilyPage } from '../pages/intro-emily/intro-emily'; 
+import { IntroScottPage } from '../pages/intro-scott/intro-scott'; 
 import { ProfileSamanthaPage } from '../pages/profile-samantha/profile-samantha';
 import { ChatSamanthaPage } from '../pages/chat-samantha/chat-samantha';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -25,6 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AddPage,
     SettingsPage,
     IntroEmilyPage,
+    IntroScottPage,
     LoginPage,
     ProfileSamanthaPage,
     ChatSamanthaPage
@@ -42,6 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AddPage,
     SettingsPage,
     IntroEmilyPage,
+    IntroScottPage,
     LoginPage,
     ProfileSamanthaPage,
     ChatSamanthaPage

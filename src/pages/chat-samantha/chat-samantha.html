@@ -25,7 +25,7 @@
 
 </ion-header>
 
-<ion-content padding class="page-chat-view">
+<ion-content padding>
 
 <div class="conversation">
 <div class="chat-bubble you">Hi, John. Emily thought we should meet.</div>
@@ -36,6 +36,7 @@
 <div class="chat-bubble you">Sure. When and where? </div>
 <div class="chat-bubble me">I know this really cool place called Fox and Fern in Forest Hill. How does that sound? 4pm? </div>
 <div class="chat-bubble you">Sounds great. See you there. </div>
+<div class="chat-bubble me">Sure thing. I'm looking forward to it. </div>
 </div>
 
 </ion-content>
@@ -45,7 +46,8 @@
   <ion-grid>
     <ion-row>
       <ion-col col-10>
-        <ion-input type="text" placeholder="Type Message" name="message" style="color: #666666; border: 1px solid #cccccc; padding: 0px 10px; border-radius: 30px; background-color: #ffffff; font-size: 1.1em;"></ion-input>
+       <div class="cursor">
+        <ion-input type="text" placeholder="Type Message" name="message" style="color: #666666; border: 1px solid #cccccc; padding: 0px 10px; border-radius: 30px; background-color: #ffffff; font-size: 1.1em;"></ion-input></div>
       </ion-col>
       <ion-col col-2 >
         <ion-icon (click)="sendMessage()" name="arrow-dropup-circle" color="secondary" style="font-size: 3em;"></ion-icon>
