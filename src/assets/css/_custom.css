@@ -12,6 +12,17 @@
 	margin: 0px auto 10px auto;
 }
 
+.title.no-logo > .toolbar-title:before {
+	content: "akjgkadghflkg";
+	background-image: url(../imgs/logo.png);
+	background-repeat: no-repeat;
+	display: none;
+	width: 50px;
+	height: 55px;
+	background-size: 50px 55px;
+	margin: 0px auto 10px auto;
+}
+
 .login-logo:before {
 	content: "";
 	background-image: url(../imgs/logo.png);
@@ -58,13 +69,19 @@
 	color: #666666;
 }
 
-.avatar-speak {
+.avatar-chat-wrapper {
 	text-align: center;
   } 
 
 .avatar-speak img {
   	border: 8px solid #ffffff;
   	width: 120px;
+  	border-radius: 50%;
+  } 
+
+.avatar-chat img {
+  	border: 4px solid #ffffff;
+  	width: 70px;
   	border-radius: 50%;
   } 
 
@@ -136,16 +153,16 @@
 
 .me {
     float: right;   
-    margin: 5px 10px 5px 15%;  
+    margin: 5px 0px 5px 15%;  
 	background-color: #B5A1FF;
 	color: #ffffff;
+	clear: both;
 }
-
-
 
 .you {
     float: left;    
-    margin: 5px 15% 5px 10px; 
+    margin: 5px 15% 5px 0px; 
 	background-color: #ffffff;
+	clear: both;
 }
 

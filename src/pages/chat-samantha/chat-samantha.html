@@ -7,38 +7,43 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Samantha Williams</ion-title>
+   <ion-title class="no-logo">
+    <div class="avatar-chat-wrapper">
+	<div class="avatar-chat">
+	<img src="../assets/imgs/elsa4.jpg"><br>
+    Samantha Williams
+	    </div>
+	  </div>
+	  </ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<ion-content padding class="page-chat-view">
 
-<ion-content>
-<div class="chat-avatar" style="position: fixed; background-color: #efefef; width: 100%; padding: 5px 0 0 0;">
-	
-	<div class="avatar-speak ">
-	<img src="../assets/imgs/elsa4.jpg">
-	
-</div>
-</div>
-
-
-<div class="conversation" style="margin-top: 120px;">
+<div class="conversation">
 <div class="chat-bubble you">Hi, John. Emily thought we should meet.</div>
 <div class="chat-bubble you">So, hi. How are you?</div>
 <div class="chat-bubble me">I'm doing well. I'm about to get off work. How are you? </div>
 <div class="chat-bubble you">Doing well. I'm about to get off work too.</div>
 <div class="chat-bubble me">Cool. Interested in coffee? </div>
+<div class="chat-bubble you">Sure. When and where? </div>
+<div class="chat-bubble me">I know this really cool place called Fox and Fern in Forest Hill. How does that sound? 4pm? </div>
+<div class="chat-bubble you">Sounds great. See you there. </div>
 </div>
 
-<ion-footer style="background-color: #fff;">
-  <ion-grid>
-   <ion-row>
-   <ion-col col-12>
-    <ion-input type="text" placeholder="Message" color="light"></ion-input>
-    </ion-col>
-    </ion-row>
-    </ion-grid>
-</ion-footer>
-
 </ion-content>
+
+
+<ion-footer style="background-color: #efefef;">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-10>
+        <ion-input type="text" placeholder="Type Message" name="message" style="color: #666666; border: 1px solid #cccccc; padding: 0px 10px; border-radius: 30px; background-color: #ffffff; font-size: 1.1em;"></ion-input>
+      </ion-col>
+      <ion-col col-2 >
+        <ion-icon (click)="sendMessage()" name="arrow-dropup-circle" color="secondary" style="font-size: 3em;"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
