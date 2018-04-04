@@ -17,55 +17,40 @@
 
 <ion-item-sliding>
    <a ion-item (click)="pushToChat()">
+     <ion-note item-start class="chat-indicator on"></ion-note>
       <ion-avatar item-start>
         <img src="../assets/imgs/elsa4.jpg">
       </ion-avatar>
          
       <h2><strong>Samantha Williams</strong></h2>
       <p>Hi, John. Emily thought we should chat. How are you?</p>
-      <p><i>8:12 PM</i></p>
-      <ion-icon name="chatbubbles" color="secondary" item-left></ion-icon>
+      <ion-note item-end><p><i>8:12 PM</i></p></ion-note>
     </a>
-    <ion-item-options side="right">
-      <button ion-button color="danger">
-        <ion-icon name="decline"></ion-icon>
-        Decline
-      </button>
-    </ion-item-options>
   </ion-item-sliding>
   
     <ion-item-sliding>
-   <a ion-item >
+    
+   <a ion-item>
+     <ion-note item-start class="chat-indicator off"></ion-note>
       <ion-avatar item-start>
         <img src="../assets/imgs/frozen.jpg">
       </ion-avatar> 
       <h2><strong>Beth Hart</strong></h2>
       <p>Sure, that would be great. What time were you thinking?</p>
-      <p><i>Yesterday</i></p>
+      <ion-note item-end><p><i>Yesterday</i></p></ion-note>
     </a>
-    <ion-item-options side="right">
-      <button ion-button color="danger">
-        <ion-icon name="decline"></ion-icon>
-        Decline
-      </button>
-    </ion-item-options>
   </ion-item-sliding>
   
     <ion-item-sliding>
    <a ion-item >
+     <ion-note item-start class="chat-indicator off"></ion-note>
       <ion-avatar item-start>
         <img src="../assets/imgs/snow.jpg">
       </ion-avatar>
       <h2><strong>Amanda Strong</strong></h2>
       <p>I like that idea.</p>
-      <p><i>3/27/18</i></p>
+      <ion-note item-end><p><i>3/27/18</i></p></ion-note>
     </a>
-    <ion-item-options side="right">
-      <button ion-button color="danger">
-        <ion-icon name="decline"></ion-icon>
-        Decline
-      </button>
-    </ion-item-options>
   </ion-item-sliding>
 
 </ion-content>
