@@ -181,3 +181,18 @@
 	margin: 0 6px 0 -8px;
 }
 
+/* Toast */
+
+.toast-congrats > div > div {
+	background-color: #89D856;
+	border-radius: 6px;
+}
+
+.toast-congrats > div > div > div {
+	font-size: 1.1em !important;
+}
+
+.toast-congrats > div > div > div:before {
+	content: "Congratulaions! ";
+	font-weight: 600;
+}
