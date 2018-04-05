@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 
 import { ChatSamanthaPage } from '../chat-samantha/chat-samantha';
-import { ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the IntroAcceptedPage page.
@@ -23,14 +22,15 @@ export class IntroAcceptedPage {
 
 
   ionViewDidLoad() {
+	  
     console.log('ionViewDidLoad IntroAcceptedPage');
     let toast = this.toastCtrl.create({
-    message: "John, meet Samantha.",
+    message: 'John, meet Samantha.',
     position: 'top',
     showCloseButton: true,
-    closeButtonText: "close",
+    closeButtonText: 'close',
     cssClass: "toast-congrats",
-    duration: "5000"
+    duration: 5000
   });
 
   toast.onDidDismiss(() => {
