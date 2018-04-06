@@ -31,7 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IntroAcceptedPage,
     LoginPage,
     ProfileSamanthaPage,
-    ChatSamanthaPage
+    ChatSamanthaPage,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +50,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IntroAcceptedPage,
     LoginPage,
     ProfileSamanthaPage,
-    ChatSamanthaPage
+    ChatSamanthaPage,
   ],
   providers: [
     StatusBar,
