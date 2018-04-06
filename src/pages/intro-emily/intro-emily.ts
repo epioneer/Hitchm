@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the IntroEmilyPage page.
@@ -14,41 +14,27 @@ import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angu
   templateUrl: 'intro-emily.html',
 })
 export class IntroEmilyPage {
+	
+	public myMessage: string = "";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IntroEmilyPage');
-  }
+  }	
 	
-  acceptedToast() {
-  let toast = this.toastCtrl.create({
-    message: "You accepted. We'll notify you when Emily's friend accepts, too.",
-    duration: 5000,
-    position: 'top',
-    cssClass: "toast-congrats"
-  });
+  acceptedMessage() {
+		this.myMessage = "accepted";
+	}
 
-  toast.onDidDismiss(() => {
-    console.log('Dismissed toast');
-  });
+  declineMessage() {
+		this.myMessage = "declined";
+	}
 
-  toast.present();
-}
-	
-  declineToast() {
-  let toast = this.toastCtrl.create({
-    message: 'You declined this introduction.',
-    duration: 3000,
-    position: 'top'
-  });
-
-  toast.onDidDismiss(() => {
-    console.log('Dismissed toast');
-  });
-
-  toast.present();
-}
+  changeMessage() {
+		this.myMessage = "";
+	}
 
 }

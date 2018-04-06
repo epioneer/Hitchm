@@ -25,12 +25,12 @@ export class IntroAcceptedPage {
 	  
     console.log('ionViewDidLoad IntroAcceptedPage');
     let toast = this.toastCtrl.create({
-    message: 'John, meet Samantha.',
+    message: 'John, Emily would like you to meet Samantha.',
     position: 'top',
     showCloseButton: true,
     closeButtonText: 'close',
     cssClass: "toast-congrats",
-    duration: 5000
+    duration: 8000
   });
 
   toast.onDidDismiss(() => {

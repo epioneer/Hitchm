@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding> 
 
 <ion-card>
   <ion-card-content text-center>
@@ -36,19 +36,19 @@
   </ion-card-content>
 </ion-card>
 
-<ion-grid>
+<div [ngSwitch]="myMessage">
+
+<ion-grid *ngSwitchDefault>
   <ion-row>
     <ion-col col-12 text-center><p class="speak-accept">Do you accept the introduction?</p></ion-col>
   </ion-row>
-</ion-grid>
 
-<ion-grid>
   <ion-row>
-    <ion-col col-6 text-center><button ion-button round large color="secondary" (click)="acceptedToast()">
+    <ion-col col-6 text-center><button ion-button round large color="secondary" (click)="acceptedMessage()">
 	<ion-icon name="md-checkmark" color="white" large></ion-icon>
 </button></ion-col>
  
-     <ion-col col-6 text-center><button ion-button round large color="white" (click)="declineToast()">
+     <ion-col col-6 text-center><button ion-button round large color="white" (click)="declineMessage()">
 	<ion-icon name="md-close" color="gray"></ion-icon>
 </button></ion-col>
   </ion-row>
@@ -63,4 +63,20 @@
   
 </ion-grid>
 
+    <ion-card color="secondary" *ngSwitchCase="'accepted'">
+  <ion-card-content text-center>
+	  <strong>You acceped!</strong> We'll notify you when Emily's friend accepts, too. <a href="#" (click)="changeMessage()" style="color: #fff;">Change</a>
+  </ion-card-content>
+</ion-card>
+    
+
+    <ion-card color="white" *ngSwitchCase="'declined'">
+  <ion-card-content text-center >
+	  <strong style="color: #D65555;">You declined.</strong> We will not reveal who you are to Emily's friend. <a href="#" (click)="changeMessage()">Change</a>
+  </ion-card-content>
+</ion-card>
+    </div>
+
 </ion-content>
+
+

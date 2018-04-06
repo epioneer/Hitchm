@@ -193,6 +193,8 @@
 }
 
 .toast-congrats > div > div > div:before {
-	content: "Congratulaions! ";
+	content: "You accepted! ";
 	font-weight: 600;
 }
+
+
