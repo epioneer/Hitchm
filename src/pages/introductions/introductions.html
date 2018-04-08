@@ -10,12 +10,8 @@
   <ion-navbar>
     <ion-title>Introductions</ion-title>
   </ion-navbar>
-
-</ion-header>
-
-<ion-content>
-
-  <ion-segment [(ngModel)]="intros">
+  
+    <ion-segment [(ngModel)]="intros">
     
     <ion-segment-button value="myhitchm">
       My Hitchm's
@@ -32,6 +28,12 @@
     </ion-segment-button>
     
   </ion-segment>
+
+</ion-header>
+
+<ion-content>
+
+
   
   <div [ngSwitch]="intros">
 
