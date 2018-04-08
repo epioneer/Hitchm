@@ -197,4 +197,19 @@
 	font-weight: 600;
 }
 
+/* Search */
+
+.search-header.toolbar-md {
+	min-height: 0px;
+}
+
+.search-header.toolbar.toolbar-ios {
+	min-height: 0px;
+}
+
+.search-header.toolbar > .toolbar-background {
+	background-color: #efefef;
+}
+
+.searchbar-input {background-color: #ffffff !important;} 
 

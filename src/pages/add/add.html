@@ -9,12 +9,18 @@
   <ion-navbar>
     <ion-title>Introduce Friends</ion-title>
   </ion-navbar>
+  
+  <ion-toolbar class="search-header">
+  		  
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 
+  </ion-toolbar>
+  
 </ion-header>
 
 <ion-content>
 
-<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
 
 <ion-list>
     <ion-item *ngFor="let item of items" (click)="clicked($event, item)">
